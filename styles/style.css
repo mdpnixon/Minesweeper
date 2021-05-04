@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.top {
+    display: flex;
+}
+
+.reset {
+    height: 50px;
+    width: 50px;
+}
+
+@font-face {
+    font-family: 'Alarm Clock';
+    src: url('../assets/alarm-clock.ttf')  format('truetype')
+}
+
+#bomb-count {
+    text-align: center;
+    color: red;
+    font-family: 'Alarm Clock', Fallback, sans-serif;
+    font-size: 40px;
+    position: relative;
+    top: -38px;
+    left: 2px;
+}
+
+.top-box {
+    border: 1px solid grey;
+    background-color: rgb(198, 196, 196);
+    color: red;
+    text-align: center;
+    font-size: medium;
+    height: 50px;
+    width: 125px;
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 250px;
+}
+
+.box {
+    height: 25px;
+    width: 25px;
+    border: 1px solid grey;
+}
+
+.closed {
+    background-image: url('../assets/facing-down.png');
+}
+
+.bombed {
+    background-image: url('../assets/boom.png');
+}
+
+.flagged {
+    background-image: url('../assets/flagged.png');
+}
+
+.empty {
+    background-image: url('../assets/0.png');
+}
+
+.one {
+    background-image: url('../assets/1.png');
+}
+
+.two {
+    background-image: url('../assets/2.png');
+}
+
+.three {
+    background-image: url('../assets/3.png');
+}
+
+.four {
+    background-image: url('../assets/4.png');
+}
+
+.five {
+    background-image: url('../assets/5.png');
+}
+
+.six {
+    background-image: url('../assets/6.png');
+}
+
+.seven {
+    background-image: url('../assets/7.png');
+}

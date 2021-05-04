@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" 
+    rel="stylesheet">
+    <script defer src="scripts/app.js"></script>
+</head>
+<body>
+    <h1>Minesweeper</h1>
+    <div class="board-container">
+        <div class="top">
+            <div class="top-box"><p id="bomb-count"></p></div>
+            <div class="top-box" id="reset">
+                <INPUT class="reset" type="image" src="assets/sun-smile.png" value="">
+            </div>
+        </div>
+        <div class="board">
+            <div class="box closed" id="b00"></div>
+            <div class="box closed" id="b01"></div>
+            <div class="box closed" id="b02"></div>
+            <div class="box closed" id="b03"></div>
+            <div class="box closed" id="b04"></div>
+            <div class="box closed" id="b05"></div>
+            <div class="box closed" id="b06"></div>
+            <div class="box closed" id="b07"></div>
+            <div class="box closed" id="b08"></div>
+            <div class="box closed" id="b09"></div>
+            <div class="box closed" id="b10"></div>
+            <div class="box closed" id="b11"></div>
+            <div class="box closed" id="b12"></div>
+            <div class="box closed" id="b13"></div>
+            <div class="box closed" id="b14"></div>
+            <div class="box closed" id="b15"></div>
+            <div class="box closed" id="b16"></div>
+            <div class="box closed" id="b17"></div>
+            <div class="box closed" id="b18"></div>
+            <div class="box closed" id="b19"></div>
+            <div class="box closed" id="b20"></div>
+            <div class="box closed" id="b21"></div>
+            <div class="box closed" id="b22"></div>
+            <div class="box closed" id="b23"></div>
+            <div class="box closed" id="b24"></div>
+            <div class="box closed" id="b25"></div>
+            <div class="box closed" id="b26"></div>
+            <div class="box closed" id="b27"></div>
+            <div class="box closed" id="b28"></div>
+            <div class="box closed" id="b29"></div>
+            <div class="box closed" id="b30"></div>
+            <div class="box closed" id="b31"></div>
+            <div class="box closed" id="b32"></div>
+            <div class="box closed" id="b33"></div>
+            <div class="box closed" id="b34"></div>
+            <div class="box closed" id="b35"></div>
+            <div class="box closed" id="b36"></div>
+            <div class="box closed" id="b37"></div>
+            <div class="box closed" id="b38"></div>
+            <div class="box closed" id="b39"></div>
+            <div class="box closed" id="b40"></div>
+            <div class="box closed" id="b41"></div>
+            <div class="box closed" id="b42"></div>
+            <div class="box closed" id="b43"></div>
+            <div class="box closed" id="b44"></div>
+            <div class="box closed" id="b45"></div>
+            <div class="box closed" id="b46"></div>
+            <div class="box closed" id="b47"></div>
+            <div class="box closed" id="b48"></div>
+            <div class="box closed" id="b49"></div>
+            <div class="box closed" id="b50"></div>
+            <div class="box closed" id="b51"></div>
+            <div class="box closed" id="b52"></div>
+            <div class="box closed" id="b53"></div>
+            <div class="box closed" id="b54"></div>
+            <div class="box closed" id="b55"></div>
+            <div class="box closed" id="b56"></div>
+            <div class="box closed" id="b57"></div>
+            <div class="box closed" id="b58"></div>
+            <div class="box closed" id="b59"></div>
+            <div class="box closed" id="b60"></div>
+            <div class="box closed" id="b61"></div>
+            <div class="box closed" id="b62"></div>
+            <div class="box closed" id="b63"></div>
+            <div class="box closed" id="b64"></div>
+            <div class="box closed" id="b65"></div>
+            <div class="box closed" id="b66"></div>
+            <div class="box closed" id="b67"></div>
+            <div class="box closed" id="b68"></div>
+            <div class="box closed" id="b69"></div>
+            <div class="box closed" id="b70"></div>
+            <div class="box closed" id="b71"></div>
+            <div class="box closed" id="b72"></div>
+            <div class="box closed" id="b73"></div>
+            <div class="box closed" id="b74"></div>
+            <div class="box closed" id="b75"></div>
+            <div class="box closed" id="b76"></div>
+            <div class="box closed" id="b77"></div>
+            <div class="box closed" id="b78"></div>
+            <div class="box closed" id="b79"></div>
+            <div class="box closed" id="b80"></div>
+            <div class="box closed" id="b81"></div>
+            <div class="box closed" id="b82"></div>
+            <div class="box closed" id="b83"></div>
+            <div class="box closed" id="b84"></div>
+            <div class="box closed" id="b85"></div>
+            <div class="box closed" id="b86"></div>
+            <div class="box closed" id="b87"></div>
+            <div class="box closed" id="b88"></div>
+            <div class="box closed" id="b89"></div>
+            <div class="box closed" id="b90"></div>
+            <div class="box closed" id="b91"></div>
+            <div class="box closed" id="b92"></div>
+            <div class="box closed" id="b93"></div>
+            <div class="box closed" id="b94"></div>
+            <div class="box closed" id="b95"></div>
+            <div class="box closed" id="b96"></div>
+            <div class="box closed" id="b97"></div>
+            <div class="box closed" id="b98"></div>
+            <div class="box closed" id="b99"></div>
+        </div>
+    </div>
+    <div class="player">
+        <input type="checkbox">Play Background Music
+        <audio  id="bg-player" src="assets/ambient-pattern.mp3" loop></audio>
+    </div>
+</body>
+</html>
